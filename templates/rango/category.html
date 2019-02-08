@@ -18,7 +18,9 @@
 			<strong> No pages currently in category.</strong>
 		{% endif %}
 		{% if user.is_authenticated %}
-			<a href="/rango/category/{{category.slug}}/add_page/">Add a page</a><br/>
+			<ul>
+				<a href="/rango/category/{{ category.slug }}/add_page/">Add a New Page</a><br />
+			</ul>
 		{% endif %}
 	{% else %}
 		The specified category does not exist!
